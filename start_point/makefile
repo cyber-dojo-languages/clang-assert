@@ -1,12 +1,16 @@
 CFLAGS += -I. -Wall -Wextra -x c -std=c11
+CFLAGS +=	-Wshadow
+CFLAGS +=	-Wfloat-equal
+CFLAGS +=	-O
 CFLAGS += -Wsequence-point
-CFLAGS += -Wmissing-noreturn -Wunreachable-code
-CFLAGS += -Wmissing-prototypes -Wstrict-prototypes
-CFLAGS += -fsanitize=undefined -fno-sanitize-recover=undefined
-CFLAGS += -fno-omit-frame-pointer
+CFLAGS += -Wmissing-noreturn
+CFLAGS += -Wunreachable-code
+CFLAGS += -Wmissing-prototypes
+CFLAGS += -Wstrict-prototypes
 
-# currently ubuntu17.04 + clang-4.0.0 gives spurious Leak
-# warnings when the address sanitizer is enabled.
+CFLAGS += -fsanitize=address
+CFLAGS += -fno-sanitize-recover=undefined
+CFLAGS += -fno-omit-frame-pointer
 
 H_FILES = $(wildcard *.h)
 COMPILED_H_FILES = $(patsubst %.h,%.compiled_h,$(H_FILES))
