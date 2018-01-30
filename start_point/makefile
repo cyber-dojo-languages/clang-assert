@@ -1,7 +1,7 @@
 CFLAGS += -I. -Wall -Wextra -x c -std=c11
-CFLAGS +=	-Wshadow
-CFLAGS +=	-Wfloat-equal
-CFLAGS +=	-O
+CFLAGS += -Wshadow
+CFLAGS += -Wfloat-equal
+CFLAGS += -O
 CFLAGS += -Wsequence-point
 CFLAGS += -Wmissing-noreturn
 CFLAGS += -Wunreachable-code
