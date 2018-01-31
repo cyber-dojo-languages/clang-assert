@@ -1,4 +1,4 @@
-CFLAGS += -I. -Wall -Wextra -x c -std=c11
+CFLAGS += -I. -Wall -Wextra -Werror -x c -std=c11
 CFLAGS += -Wshadow
 CFLAGS += -Wfloat-equal
 CFLAGS += -O
