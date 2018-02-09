@@ -1,4 +1,4 @@
-FROM  cyberdojofoundation/clang:5.0.1
+FROM  cyberdojofoundation/clang
 LABEL maintainer=jon@jaggersoft.com
 
 COPY red_amber_green.rb /usr/local/bin
