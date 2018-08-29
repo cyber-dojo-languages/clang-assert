@@ -11,6 +11,7 @@ static const char * green_traffic_light_pattern(void)
 {
     return "All tests passed";
 }
+
 int main(void)
 {
     life_the_universe_and_everything();
