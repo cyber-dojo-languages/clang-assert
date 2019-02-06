@@ -1,7 +1,6 @@
 CFLAGS += -I.
 CFLAGS += -Wall
 CFLAGS += -Wextra
-CFLAGS += -Werror
 CFLAGS += -x c
 CFLAGS += -std=c11
 CFLAGS += -Wshadow
