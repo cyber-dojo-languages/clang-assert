@@ -2,7 +2,7 @@ CFLAGS += -I.
 CFLAGS += -Wall
 CFLAGS += -Wextra
 CFLAGS += -x c
-CFLAGS += -std=c11
+CFLAGS += -std=c18
 CFLAGS += -Wshadow
 CFLAGS += -Wfloat-equal
 CFLAGS += -O
@@ -24,7 +24,7 @@ C_FILES = $(wildcard *.c)
 test.output: test makefile
 	@./$<
 
-test: makefile $(C_FILES) $(COMPILED_H_FILES)
+test: $(C_FILES) $(COMPILED_H_FILES)
 	@$(CC) $(CFLAGS) -O $(C_FILES) -o $@
 
 # This rule ensures header files build in their own right.
