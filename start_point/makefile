@@ -12,6 +12,8 @@ CFLAGS += -Wunreachable-code
 CFLAGS += -Wmissing-prototypes
 CFLAGS += -Wstrict-prototypes
 
+CFLAGS += -fprofile-arcs -ftest-coverage
+
 CFLAGS += -fsanitize=leak,address
 CFLAGS += -fno-sanitize-recover=undefined
 CFLAGS += -fno-omit-frame-pointer
