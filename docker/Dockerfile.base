@@ -1,3 +1,6 @@
-FROM ghcr.io/cyber-dojo-languages/clang:a220374
+FROM ghcr.io/cyber-dojo-languages/clang:1a5d751
 LABEL maintainer=jon@jaggersoft.com
+
+COPY install.sh .
+RUN ./install.sh && rm ./install.sh
 
